@@ -35,6 +35,10 @@
                 if(data["station"] === null){
                     //If Azuracast is down
                         Console.log('Station is Down. No Data.')
+                        $('.nowPlaying').text('Now Playing: No Data');
+                        $('.listner').text('<i class="fas fa-users"> </i> No Data ');
+                        $('.nextPlaying').text('Playing Next: No Data');
+                        $('.playlist').text('playlist: No Data');
                     }else{
                     //If Azuracast is up and running:
                         $('.nowPlaying').text('Now Playing: ' + data.now_playing.song.text);
